@@ -1,0 +1,134 @@
+/*******....Reset CSS....*****/
+:root {
+  --color-black: #000;
+  --color-teal: teal;
+  --color-crema: #f9fed1;
+  --color-white: #fff;
+  --main-font: "sans-serif";
+  --font-size: 16px;
+  --container-width: 1200px;
+}
+
+html {
+  font-family: var(--main-font);
+  font-size: var(--font-size);
+
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; /*inherit: hereda lo que esta en el padre*/
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden; /* todo lo que se desvorde en horizontal se oculte */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*********.......menu-hamburger.......********/
+
+.header {
+  background-color: var(--color-teal);
+  color: var(--color-white);
+  padding: 1rem;
+  top: 0;
+  position: sticky;
+}
+
+.header h1 {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.panel {
+  position: fixed;
+  z-index: 998;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.5s ease;
+  /* De arribe*/
+  transform: translate(-100%, 0);
+  transform: translate(100%, 0);
+  transform: translate(0, -100%);
+  transform: translate(0, 100%);
+}
+
+.panel-btn {
+  position: fixed;
+  z-index: 999;
+  bottom: 1vh;
+  right: 1vw;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+}
+
+.is-active {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+.panel-btn.hamburger {
+  background-color: var(--color-teal);
+  padding: 0;
+}
+
+.menu {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.menu ul {
+  width: inherit;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu a {
+  padding: 2rem;
+  width: inherit;
+  display: block;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--color-crema);
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.menu a:hover {
+  font-weight: bold;
+  color: var(--color-white);
+  background-color: var(--color-teal);
+}
+
+main {
+  background: var(--color-crema);
+}
+
+.section {
+  padding: 2rem;
+  padding-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: var(--container-width);
+  min-height: 100vh;
+  text-align: center;
+}
