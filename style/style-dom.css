@@ -83,6 +83,10 @@ img {
 .panel-btn.hamburger {
   background-color: var(--color-teal);
   padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu {
