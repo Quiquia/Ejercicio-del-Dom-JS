@@ -57,13 +57,14 @@ img {
   right: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  opacity: 0;
+  /* opacity: 0; */
+  /* visibility: hidden; */
   transition: transform 0.3s ease, opacity 0.5s ease;
   /* De arribe*/
-  transform: translate(-100%, 0);
-  transform: translate(100%, 0);
+  /* transform: translate(-100%, 0);*/
+  /* transform: translate(100%, 0); */
   transform: translate(0, -100%);
-  transform: translate(0, 100%);
+  /* transform: translate(0, 100%); */
 }
 
 .panel-btn {
@@ -78,7 +79,8 @@ img {
 
 .is-active {
   transform: translate(0, 0);
-  opacity: 1;
+  /* opacity: 1; */
+  /* visibility: visible; */
 }
 .panel-btn.hamburger {
   background-color: var(--color-teal);
@@ -135,4 +137,18 @@ main {
   max-width: var(--container-width);
   min-height: 100vh;
   text-align: center;
+}
+/***************....Eventos del Teclado....*************/
+
+.stage {
+  display: flex;
+  min-height: 50vh;
+  background-color: var(--color-black);
+}
+.ball {
+  margin: auto;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
 }

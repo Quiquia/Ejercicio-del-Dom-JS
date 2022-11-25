@@ -17,7 +17,7 @@
       <h1>Ejercicios del DOM</h1>
     </header>
     <button
-      class="panel-btn hamburger hamburger--spring"
+      class="panel-btn panelBtn hamburger hamburger--spring"
       type="button"
       id="panelBtn"
     >
@@ -26,10 +26,10 @@
       </span>
     </button>
     <aside class="panel" id="panel">
-      <nav class="menu" id="menu">
+      <nav class="menu menuLink" id="menu">
         <ul>
-          <li><a href="#section-1">Sección 1</a></li>
-          <li><a href="#section-2">Sección 2</a></li>
+          <li><a href="#section-1">Reloj Digital y Alarma Sonora</a></li>
+          <li><a href="#section-2">Eventos del Teclado</a></li>
           <li><a href="#section-3">Sección 3</a></li>
           <li><a href="#section-4">Sección 4</a></li>
           <li><a href="#section-5">Sección 5</a></li>
@@ -38,9 +38,22 @@
     </aside>
     <main>
       <section class="section" id="section-1">
-        <h2>Sección 1</h2>
+        <h2>Reloj Digital y Alarma Sonora</h2>
+        <div id="reloj"></div>
+
+        <div>
+          <button id="activar-reloj">Iniciar Reloj</button>
+          <button id="desactivar-reloj">Detener Reloj</button>
+          <button id="activar-alarma">Iniciar Alarma</button>
+          <button id="desactivar-alarma">Detener Alarma</button>
+        </div>
       </section>
-      <section class="section" id="section-2"><h2>Sección 2</h2></section>
+      <section class="section" id="section-2">
+        <h2>Eventos del Teclado</h2>
+        <article class="stage">
+          <div class="ball"></div>
+        </article>
+      </section>
       <section class="section" id="section-3"><h2>Sección 3</h2></section>
       <section class="section" id="section-4"><h2>Sección 4</h2></section>
       <section class="section" id="section-5"><h2>Sección 5</h2></section>
