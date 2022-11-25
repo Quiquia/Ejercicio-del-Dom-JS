@@ -16,7 +16,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   hamburgerMenu(".panel-btn", ".panel", ".menu a");
   relojDigital("#reloj", "#activar-reloj", "#desactivar-reloj");
   alarma(
-    "/assets/alarma-good-morning-5-5.mp3",
+    "./assets/alarma-good-morning-5-5.mp3",
     "#activar-alarma",
     "#desactivar-alarma"
   );
