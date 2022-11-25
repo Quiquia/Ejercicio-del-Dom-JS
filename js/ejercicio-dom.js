@@ -16,7 +16,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   hamburgerMenu(".panel-btn", ".panel", ".menu a");
   relojDigital("#reloj", "#activar-reloj", "#desactivar-reloj");
   alarma(
-    "../assets/alarma-good-morning-5-5.mp3",
+    "https://cdn.pixabay.com/download/audio/2022/08/31/audio_419263fc12.mp3?filename=leonell-cassio-the-blackest-bouquet-118766.mp3",
     "#activar-alarma",
     "#desactivar-alarma"
   );
