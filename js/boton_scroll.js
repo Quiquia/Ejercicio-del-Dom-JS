@@ -11,12 +11,12 @@ export default function buttonTop(btn) {
     } else {
       $buttonTop.classList.add("hidden");
     }
-    console.log(w.pageYOffset, d.documentElement.scrollTop);
+    // console.log(w.pageYOffset, d.documentElement.scrollTop);
   });
 
   d.addEventListener("click", (e) => {
     if (e.target.matches(btn) || e.target.matches(`${btn} *`)) {
-      console.log("Prueba");
+      // console.log("Prueba");
       w.scrollTo({
         behavior: "smooth",
         top: 0,
